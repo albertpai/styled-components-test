@@ -2,20 +2,20 @@ import React from 'react';
 import styled from "styled-components";
 
 const StyledCounter = styled.div`
-padding: 2em;
-text-align: center;
-background-color: DarkSeaGreen;
+    padding: 2em;
+    text-align: center;
+    background: DarkSeaGreen;
 `;
 
 const Paragraph = styled.p`
-color: Indigo;
+    color: Indigo;
 `;
 
 const Button = styled.button`
-font-size: 1em;
-width: 5em;
-height: 2em;
-margin: 0 10px;
+    font-size: 1em;
+    width: 5em;
+    height: 2em;
+    margin: 0 10px;
 `;
 
 export default class Counter extends React.Component {
