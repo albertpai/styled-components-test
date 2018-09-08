@@ -19,10 +19,16 @@ const Input = styled.input`
     margin: 0.5em;
     border: solid;
     border-color: orange;
-    color: ${props => props.inputColor || "palevioletred"};
-    font-size: ${props => props.inputFontSize || "0.8em"};
-    background: ${props => props.inputBackground || "papayawhip"};
     border-radius: 5px;
+    color: palevioletred;
+    font-size: 0.8em;
+    background: papayawhip;
+`;
+
+const InputSubmit = styled(Input)`
+    color: black;
+    font-size: 1.1em;
+    background: orange;
 `;
 
 export default class Form extends React.Component {
@@ -31,15 +37,15 @@ export default class Form extends React.Component {
             <Wrapper>
                 <form method="get">
                     <Label for="name" maxlength="5" required>Name: </Label>
-                    <Input type="text" name="name"/>
+                    <Input type="text" name="name" />
                     <br />
                     <Label for="email">Email: </Label>
-                    <Input type="text" name="email"/>
+                    <Input type="text" name="email" />
                     <br />
                     <Label for="password">Password: </Label>
-                    <Input type="password" name="password"/>
+                    <Input type="password" name="password" />
                     <br />
-                    <Input type="submit" value="Submit" inputColor="black" inputFontSize="1.1em" inputBackground="orange"></Input>
+                    <InputSubmit type="submit" value="Submit" />
                 </form>
             </Wrapper>
         )
