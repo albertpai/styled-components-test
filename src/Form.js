@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from "styled-components";
 
-
 const Wrapper = styled.div`
     padding: 4em;
     background: beige;
     text-align: center;
+`;
+
+const Label = styled.label`
+    padding: 0.5em;
+    margin: 0.5em;
+    color: Navy;
 `;
 
 // Create an Input component that'll render an <input> tag with some styles
@@ -18,12 +23,6 @@ const Input = styled.input`
     font-size: ${props => props.inputFontSize || "0.8em"};
     background: ${props => props.inputBackground || "papayawhip"};
     border-radius: 5px;
-`;
-
-const Label = styled.label`
-    padding: 0.5em;
-    margin: 0.5em;
-    color: Navy;
 `;
 
 export default class Form extends React.Component {
