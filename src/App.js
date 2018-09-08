@@ -3,6 +3,7 @@ import HelloWorld from './HelloWorld';
 import Counter from './Counter';
 import Blend from './Blend';
 import Form from './Form';
+import Buttons from './Buttons';
 
 export default class App extends React.Component {
     render() {
@@ -12,6 +13,7 @@ export default class App extends React.Component {
                 <Counter/>
                 <Blend/>
                 <Form/>
+                <Buttons/>
             </div>
         );
     }
